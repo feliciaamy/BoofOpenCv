@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/Users/Amy/.android/build-cache/65aa15bb173a76b877f5ef1e2ee18044440ffe1a/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/Amy/.android/build-cache/65aa15bb173a76b877f5ef1e2ee18044440ffe1a/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/Amy/.android/build-cache/65aa15bb173a76b877f5ef1e2ee18044440ffe1a/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/Amy/.android/build-cache/65aa15bb173a76b877f5ef1e2ee18044440ffe1a/output/res/drawable-v21/abc_btn_colored_material.xml"
+    }
+]

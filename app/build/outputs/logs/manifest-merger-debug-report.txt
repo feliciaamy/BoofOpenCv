@@ -1,0 +1,361 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:2:1-159:12
+	package
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:3:5-33
+		INJECTED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.CAMERA
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:5:5-65
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:5:22-62
+uses-permission#android.permission.INTERNET
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:6:22-64
+uses-feature#android.hardware.camera
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:8:5-10:36
+	android:required
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:10:9-33
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:9:9-47
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:11:5-13:36
+	android:required
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:13:9-33
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:12:9-57
+supports-screens
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:15:5-20:40
+	android:largeScreens
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:17:9-36
+	android:smallScreens
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:19:9-36
+	android:normalScreens
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:18:9-37
+	android:xlargeScreens
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:20:9-37
+	android:anyDensity
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:16:9-34
+application
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:22:5-157:19
+MERGED from [com.android.support:appcompat-v7:25.1.0] /Users/Amy/.android/build-cache/65aa15bb173a76b877f5ef1e2ee18044440ffe1a/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] /Users/Amy/.android/build-cache/f61eb7f9b511c0a29e39e4adf6a3170ab4811505/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.0] /Users/Amy/.android/build-cache/d834a82371d712e87cac36355e2359bcb1d38b17/output/AndroidManifest.xml:23:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/Amy/.android/build-cache/dc22040da58ad33416e1155ac67cf052f27a2b51/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/Amy/.android/build-cache/dd13970c9f3b90e15790aa9161f129bdb1912457/output/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:25.1.0] /Users/Amy/.android/build-cache/325e031c33b5319264d16d702e4670a774060657/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.0] /Users/Amy/.android/build-cache/cc8f5ee26c401fff97b98faba2ae201b5ea7a245/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.0] /Users/Amy/.android/build-cache/17f7b8984c2f0a6e8c5568f1921c24259a8e3737/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.0] /Users/Amy/.android/build-cache/fa216d7b11a36049108d1f2eb2e3478bd38fd600/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.0] /Users/Amy/.android/build-cache/2b5f3d9b805ea9b714138f6cc4447148273a9669/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.0] /Users/Amy/.android/build-cache/6502689d55236d1b69e604a2a02119321dc46904/output/AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:25:9-41
+	android:allowBackup
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:23:9-35
+	android:icon
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:24:9-45
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:26:9-68
+activity#org.boofcv.android.DemoMain
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:27:9-35:20
+	android:label
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:29:13-45
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:28:13-37
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:30:13-34:29
+action#android.intent.action.MAIN
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:31:17-69
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:31:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:33:17-77
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:33:27-74
+activity#org.boofcv.android.DemoVideoDisplayActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:36:9-38:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:38:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:37:13-53
+activity#org.boofcv.android.PreferenceActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:39:9-56
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:39:19-53
+activity#org.boofcv.android.ip.BlurDisplayActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:40:9-42:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:42:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:41:13-51
+activity#org.boofcv.android.ip.EnhanceDisplayActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:43:9-45:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:45:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:44:13-54
+activity#org.boofcv.android.ip.GradientDisplayActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:46:9-48:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:48:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:47:13-55
+activity#org.boofcv.android.ip.BinaryDisplayActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:49:9-51:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:51:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:50:13-53
+activity#org.boofcv.android.detect.PointDisplayActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:52:9-54:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:54:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:53:13-56
+activity#org.boofcv.android.detect.ScalePointDisplayActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:55:9-57:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:57:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:56:13-61
+activity#org.boofcv.android.detect.LineDisplayActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:58:9-60:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:60:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:59:13-55
+activity#org.boofcv.android.tracker.KltDisplayActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:61:9-63:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:63:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:62:13-55
+activity#org.boofcv.android.sfm.StabilizeDisplayActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:64:9-66:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:66:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:65:13-57
+activity#org.boofcv.android.sfm.MosaicDisplayActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:67:9-69:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:69:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:68:13-54
+activity#org.boofcv.android.assoc.AssociationActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:70:9-72:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:72:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:71:13-54
+activity#org.boofcv.android.tracker.DdaTrackerDisplayActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:73:9-75:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:75:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:74:13-62
+activity#org.boofcv.android.tracker.CombinedTrackerDisplayActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:76:9-78:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:78:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:77:13-67
+activity#org.boofcv.android.calib.CalibrationActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:79:9-81:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:81:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:80:13-54
+activity#org.boofcv.android.calib.CalibrationComputeActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:82:9-84:77
+	android:configChanges
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:84:13-74
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:83:13-61
+activity#org.boofcv.android.CameraInformationActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:85:9-63
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:85:19-60
+activity#org.boofcv.android.sfm.DisparityActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:86:9-88:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:88:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:87:13-50
+activity#org.boofcv.android.AboutActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:89:9-51
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:89:19-48
+activity#org.boofcv.android.calib.CalibrationHelpActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:90:9-67
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:90:19-64
+activity#org.boofcv.android.detect.ShapeFitDisplayActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:91:9-93:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:93:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:92:13-59
+activity#org.boofcv.android.ip.ImageTransformActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:94:9-96:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:96:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:95:13-54
+activity#org.boofcv.android.tracker.ObjectTrackerActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:97:9-99:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:99:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:98:13-58
+activity#org.boofcv.android.detect.ContourShapeFittingActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:100:9-102:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:102:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:101:13-63
+activity#org.boofcv.android.detect.CannyEdgeActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:103:9-105:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:105:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:104:13-53
+activity#org.boofcv.android.calib.UndistortDisplayActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:106:9-108:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:108:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:107:13-59
+activity#org.boofcv.android.detect.SegmentationDisplayActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:109:9-111:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:111:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:110:13-63
+activity#org.boofcv.android.ip.ThresholdDisplayActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:112:9-114:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:114:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:113:13-56
+activity#org.boofcv.android.recognition.FiducialSquareBinaryActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:115:9-117:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:117:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:116:13-69
+activity#org.boofcv.android.recognition.FiducialSquareBinaryHelpActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:118:9-82
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:118:19-79
+activity#org.boofcv.android.recognition.FiducialSquareImageActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:119:9-121:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:121:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:120:13-68
+activity#org.boofcv.android.recognition.FiducialSquareImageHelpActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:122:9-81
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:122:19-78
+activity#org.boofcv.android.recognition.FiducialLearnActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:123:9-125:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:125:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:124:13-62
+activity#org.boofcv.android.recognition.FiducialImageLibraryAcitivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:126:9-79
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:126:19-76
+activity#org.boofcv.android.recognition.FiducialSelectHelpActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:127:9-76
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:127:19-73
+activity#org.boofcv.android.recognition.FiducialCalibrationActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:128:9-130:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:130:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:129:13-68
+activity#org.boofcv.android.recognition.FiducialCalibrationHelpActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:131:9-133:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:133:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:132:13-72
+activity#org.boofcv.android.tracker.StaticBackgroundMotionActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:134:9-136:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:136:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:135:13-67
+activity#org.boofcv.android.detect.DetectBlackPolygonActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:137:9-139:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:139:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:138:13-62
+activity#org.boofcv.android.detect.DetectBlackPolygonHelpActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:140:9-75
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:140:19-72
+activity#org.boofcv.android.detect.DetectBlackEllipseActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:141:9-143:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:143:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:142:13-62
+activity#org.boofcv.android.recognition.ImageClassificationActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:145:9-147:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:147:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:146:13-68
+activity#org.boofcv.android.localization.LocalizationActivity
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:148:9-150:53
+	android:screenOrientation
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:150:13-50
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:149:13-62
+meta-data#com.google.android.gms.version
+ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:154:9-156:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/Amy/.android/build-cache/dd13970c9f3b90e15790aa9161f129bdb1912457/output/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:156:13-66
+	android:name
+		ADDED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml:155:13-58
+uses-sdk
+INJECTED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:multidex:1.0.1] /Users/Amy/.android/build-cache/bf10611c3876caea87dc63e210e9a99dd4e926a6/output/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:appcompat-v7:25.1.0] /Users/Amy/.android/build-cache/65aa15bb173a76b877f5ef1e2ee18044440ffe1a/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] /Users/Amy/.android/build-cache/f61eb7f9b511c0a29e39e4adf6a3170ab4811505/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.1.0] /Users/Amy/.android/build-cache/d834a82371d712e87cac36355e2359bcb1d38b17/output/AndroidManifest.xml:21:5-43
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/Amy/.android/build-cache/dc22040da58ad33416e1155ac67cf052f27a2b51/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/Amy/.android/build-cache/2372fa91501a32e8ead0dda44fbe747663e228c2/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/Amy/.android/build-cache/dd13970c9f3b90e15790aa9161f129bdb1912457/output/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:25.1.0] /Users/Amy/.android/build-cache/325e031c33b5319264d16d702e4670a774060657/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.1.0] /Users/Amy/.android/build-cache/cc8f5ee26c401fff97b98faba2ae201b5ea7a245/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.0] /Users/Amy/.android/build-cache/17f7b8984c2f0a6e8c5568f1921c24259a8e3737/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.1.0] /Users/Amy/.android/build-cache/fa216d7b11a36049108d1f2eb2e3478bd38fd600/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.1.0] /Users/Amy/.android/build-cache/2b5f3d9b805ea9b714138f6cc4447148273a9669/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.1.0] /Users/Amy/.android/build-cache/6502689d55236d1b69e604a2a02119321dc46904/output/AndroidManifest.xml:21:5-23:58
+MERGED from [BoofAndroidDemo-master:openCVLibrary310:unspecified] /Users/Amy/Downloads/BoofAndroidDemo-master/openCVLibrary310/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.1.0] /Users/Amy/.android/build-cache/65aa15bb173a76b877f5ef1e2ee18044440ffe1a/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/AndroidManifest.xml

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/Amy/.android/build-cache/65aa15bb173a76b877f5ef1e2ee18044440ffe1a/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/Amy/.android/build-cache/65aa15bb173a76b877f5ef1e2ee18044440ffe1a/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    }
+]

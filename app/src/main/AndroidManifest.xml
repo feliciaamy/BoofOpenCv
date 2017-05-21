@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -23,6 +24,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:theme="@style/AppTheme"
         android:name="android.support.multidex.MultiDexApplication" >
         <activity
             android:name=".DemoMain"
@@ -148,7 +150,15 @@
         <activity
             android:name=".localization.LocalizationActivity"
             android:screenOrientation="landscape" />
-
+        <activity
+            android:name=".localization.BoxDetectorActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".localization.CameraActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".localization.CaptureCameraImage"
+            android:screenOrientation="landscape" />
         <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
         <meta-data

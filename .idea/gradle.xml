@@ -9,6 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/commons-io-2.2" />
+            <option value="$PROJECT_DIR$/httpmime-4.2.1" />
             <option value="$PROJECT_DIR$/openCVLibrary310" />
           </set>
         </option>

@@ -105,11 +105,7 @@ public class Localization {
         // Load image and templates
         String directory = UtilIO.pathExample("template");
         GrayF32 image = UtilImageIO.loadImage(directory, "m_75_1.jpg", GrayF32.class);
-        GrayF32 image1 = UtilImageIO.loadImage(directory, "m_75_2.jpg", GrayF32.class);
-        GrayF32 image2 = UtilImageIO.loadImage(directory, "m_75_3.jpg", GrayF32.class);
-        GrayF32 image3 = UtilImageIO.loadImage(directory, "m_75_4.jpg", GrayF32.class);
-        GrayF32 image4 = UtilImageIO.loadImage(directory, "m_75_5.jpg", GrayF32.class);
-        GrayF32[] images = {image, image1, image2, image3, image4};
+        GrayF32[] images = {image};
 //		Boxes used:
         GrayF32 template = UtilImageIO.loadImage(directory, "template_75.jpg", GrayF32.class);
         GrayF32 template2 = UtilImageIO.loadImage(directory, "template_75_1.jpg", GrayF32.class);

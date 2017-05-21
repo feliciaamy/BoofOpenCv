@@ -1642,13 +1642,13 @@
     </string-array><string-array name="threshold_styles">
         <item>global</item>
         <item>local</item>
-    </string-array><string name="dummy_button">Dummy Button</string><string name="app_name">BoofDemo</string><string-array name="gradients">
+    </string-array><string name="dummy_button">Dummy Button</string><string-array name="gradients">
         <item>Three</item>
         <item>Sobel</item>
         <item>Prewitt</item>
         <item>two-0</item>
         <item>two-1</item>
-    </string-array><string-array name="shapes">
+    </string-array><string name="app_name">BoofDemo</string><string-array name="shapes">
         <item>Ellipse</item>
         <item>Polygon</item>
     </string-array><string-array name="segmentation_algs">
@@ -1656,12 +1656,12 @@
         <item>Felzenszwalb-Huttenloche</item>
         <item>SLIC</item>
         <item>Mean-Shift</item>
-    </string-array><string-array name="scale_features">
-        <item>SURF</item>
-        <item>SIFT</item>
     </string-array><string-array name="disparity_algs">
         <item>Rect</item>
         <item>5-Rect</item>
+    </string-array><string-array name="scale_features">
+        <item>SURF</item>
+        <item>SIFT</item>
     </string-array><string-array name="point_features">
         <item>Shi-Tomasi</item>
         <item>Harris</item>
@@ -1728,6 +1728,7 @@
         <item>NCC</item>
     </string-array><string name="dummy_content">DUMMY\nCONTENT</string></file><file path="/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/values/styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         
+    
     </style><style name="FullscreenTheme" parent="AppTheme">
         <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
         <item name="android:windowActionBarOverlay">true</item>
@@ -1736,7 +1737,7 @@
         <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
     </style><style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
         <item name="android:background">@color/black_overlay</item>
-    </style></file><file name="localization_layout" path="/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout/localization_layout.xml" qualifiers="" type="layout"/></source><source path="/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/generated/res/rs/debug"/><source path="/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/generated/res/resValues/debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/><attr format="boolean" name="showTitle"/></declare-styleable><declare-styleable name="AppCompatSeekBar"><attr name="android:thumb"/><attr format="reference" name="tickMark"/><attr format="color" name="tickMarkTint"/><attr name="tickMarkTintMode">
+    </style></file><file name="localization_layout" path="/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout/localization_layout.xml" qualifiers="" type="layout"/><file name="camera_localization" path="/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout/camera_localization.xml" qualifiers="" type="layout"/><file name="camera_layout" path="/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout/camera_layout.xml" qualifiers="" type="layout"/><file path="/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/values/dimen.xml" qualifiers=""><dimen name="activity_vertical_margin">16dp</dimen><dimen name="indeterminate_progress_size">32dp</dimen><dimen name="activity_horizontal_margin">16dp</dimen><dimen name="action_button_min_width">56dp</dimen></file><file name="activitycapturecameraimage" path="/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout/activitycapturecameraimage.xml" qualifiers="" type="layout"/><file name="cameraview" path="/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout/cameraview.xml" qualifiers="" type="layout"/><file name="templatematching" path="/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout/templatematching.xml" qualifiers="" type="layout"/></source><source path="/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/generated/res/rs/debug"/><source path="/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/generated/res/resValues/debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/><attr format="boolean" name="showTitle"/></declare-styleable><declare-styleable name="AppCompatSeekBar"><attr name="android:thumb"/><attr format="reference" name="tickMark"/><attr format="color" name="tickMarkTint"/><attr name="tickMarkTintMode">
             
             <enum name="src_over" value="3"/>
             

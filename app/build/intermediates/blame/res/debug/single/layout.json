@@ -80,6 +80,14 @@
         "source": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout/group_row.xml"
     },
     {
+        "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/layout/camera_layout.xml",
+        "source": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout/camera_layout.xml"
+    },
+    {
+        "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/layout/cameraview.xml",
+        "source": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout/cameraview.xml"
+    },
+    {
         "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
         "source": "/Users/Amy/.android/build-cache/65aa15bb173a76b877f5ef1e2ee18044440ffe1a/output/res/layout/notification_template_part_chronometer.xml"
     },
@@ -106,6 +114,10 @@
     {
         "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/layout/associate_controls.xml",
         "source": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout/associate_controls.xml"
+    },
+    {
+        "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/layout/camera_localization.xml",
+        "source": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout/camera_localization.xml"
     },
     {
         "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
@@ -256,6 +268,10 @@
         "source": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout/black_polygon_help.xml"
     },
     {
+        "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/layout/activitycapturecameraimage.xml",
+        "source": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout/activitycapturecameraimage.xml"
+    },
+    {
         "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/layout/calibration_configure.xml",
         "source": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout/calibration_configure.xml"
     },
@@ -286,6 +302,10 @@
     {
         "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/layout/fiducial_controls.xml",
         "source": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout/fiducial_controls.xml"
+    },
+    {
+        "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/layout/templatematching.xml",
+        "source": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout/templatematching.xml"
     },
     {
         "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/layout/detect_black_ellipse_controls.xml",

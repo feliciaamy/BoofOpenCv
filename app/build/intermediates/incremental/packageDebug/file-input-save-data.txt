@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun May 21 21:11:22 SGT 2017
+#Sun May 21 21:58:52 SGT 2017
 210.set=ANDROID_RESOURCE
 282.file=/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_slide_out_top.xml
 14.set=ANDROID_RESOURCE

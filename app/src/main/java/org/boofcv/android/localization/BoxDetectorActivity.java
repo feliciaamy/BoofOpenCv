@@ -72,20 +72,14 @@ public class BoxDetectorActivity extends Activity {
 
         // Create an instance of Camera
         mCamera = getCameraInstance();
-
         Camera.Parameters params = mCamera.getParameters();
-        if (params.getSupportedFocusModes().contains(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE)) {
-            params.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE);
+        if (params.getSupportedFocusModes().contains(Camera.Parameters.FOCUS_MODE_FIXED)) {
+            params.setFocusMode(Camera.Parameters.FOCUS_MODE_FIXED);
         } else {
             Log.e("AUTO FOCUS", "doesn't work");
         }
+        mCamera.setParameters(params);
 
-        SurfaceView dummy = new SurfaceView(this);
-        try {
-            mCamera.setPreviewDisplay(dummy.getHolder());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
         // Create our Preview view and set it as the content of our activity.
         mPreview = new CameraPreview(this, mCamera);
         FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview);
@@ -95,9 +89,14 @@ public class BoxDetectorActivity extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                captureButton.performClick();
+                try {
+                    takePicture(mPicture);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+//                captureButton.performClick();
             }
-        }, 5000);
+        }, 2000);
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -105,6 +104,8 @@ public class BoxDetectorActivity extends Activity {
                 close();
             }
         }, 7000);
+
+
 
         captureButton.setOnClickListener(
                 new View.OnClickListener() {
@@ -231,5 +232,30 @@ public class BoxDetectorActivity extends Activity {
         setContentView(R.layout.templatematching);
 //        Intent intent = new Intent(this, DemoMain.class);
 //        startActivity(intent);
+    }
+
+    public void takePicture(final Camera.PictureCallback callback) throws Exception
+    {
+        if(mCamera == null)
+            throw new IllegalStateException("Camera unavailable!");
+
+        // TODO lock camera here?
+
+        // Use auto focus if the camera supports it
+        String focusMode = mCamera.getParameters().getFocusMode();
+        if(focusMode.equals(Camera.Parameters.FOCUS_MODE_AUTO) || focusMode.equals(Camera.Parameters.FOCUS_MODE_FIXED))
+        {
+            mCamera.autoFocus(new Camera.AutoFocusCallback()
+            {
+                @Override
+                public void onAutoFocus(boolean success, Camera camera)
+                {
+                    camera.takePicture(null, null, callback);
+                }
+            });
+        }
+        else
+            Log.d("FOCUS","NOT IN AUTOFOCUS");
+            mCamera.takePicture(null, null, callback);
     }
 }

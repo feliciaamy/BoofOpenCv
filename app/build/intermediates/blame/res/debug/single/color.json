@@ -20,12 +20,12 @@
         "source": "/Users/Amy/.android/build-cache/65aa15bb173a76b877f5ef1e2ee18044440ffe1a/output/res/color/abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
-        "source": "/Users/Amy/.android/build-cache/65aa15bb173a76b877f5ef1e2ee18044440ffe1a/output/res/color/abc_btn_colored_borderless_text_material.xml"
-    },
-    {
         "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
         "source": "/Users/Amy/.android/build-cache/65aa15bb173a76b877f5ef1e2ee18044440ffe1a/output/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/Amy/.android/build-cache/65aa15bb173a76b877f5ef1e2ee18044440ffe1a/output/res/color/abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",

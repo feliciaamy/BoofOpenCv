@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.BitmapFactory;
 import android.hardware.Camera;
 import android.net.Uri;
 import android.os.Bundle;
@@ -26,6 +27,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import android.os.Handler;
+import android.widget.ImageView;
 
 import static android.content.ContentValues.TAG;
 
@@ -37,6 +39,7 @@ public class BoxDetectorActivity extends Activity {
     public static final int MEDIA_TYPE_IMAGE = 1;
     public static final int MEDIA_TYPE_VIDEO = 2;
 
+    private File lastPictureTaken;
     private Camera mCamera;
     private CameraPreview mPreview;
     private Camera.PictureCallback mPicture = new Camera.PictureCallback() {
@@ -45,6 +48,7 @@ public class BoxDetectorActivity extends Activity {
         public void onPictureTaken(byte[] data, Camera camera) {
 
             File pictureFile = getOutputMediaFile(MEDIA_TYPE_IMAGE);
+            lastPictureTaken = pictureFile;
             if (pictureFile == null) {
                 Log.d(TAG, "Error creating media file, check storage permissions");
                 return;
@@ -230,6 +234,9 @@ public class BoxDetectorActivity extends Activity {
     private void close() {
         mPreview.stopPreviewAndFreeCamera();
         setContentView(R.layout.templatematching);
+        ImageView mImageView;
+        mImageView = (ImageView) findViewById(R.id.imageView);
+        mImageView.setImageBitmap(BitmapFactory.decodeFile(lastPictureTaken.toString()));
 //        Intent intent = new Intent(this, DemoMain.class);
 //        startActivity(intent);
     }

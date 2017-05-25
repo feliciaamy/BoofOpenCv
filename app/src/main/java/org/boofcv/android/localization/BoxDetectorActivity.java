@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.hardware.Camera;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -18,16 +20,36 @@ import android.widget.FrameLayout;
 
 import org.boofcv.android.DemoMain;
 import org.boofcv.android.R;
+import org.opencv.android.BaseLoaderCallback;
+import org.opencv.android.LoaderCallbackInterface;
+import org.opencv.android.OpenCVLoader;
+import org.opencv.android.Utils;
+import org.opencv.core.Core;
+import org.opencv.core.CvType;
+import org.opencv.core.Mat;
+import org.opencv.core.MatOfPoint;
+import org.opencv.core.Point;
+import org.opencv.core.Rect;
+import org.opencv.core.Scalar;
+import org.opencv.core.Size;
+import org.opencv.imgproc.Imgproc;
+import org.opencv.imgproc.Moments;
+import org.w3c.dom.Text;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
+import java.util.List;
 
 import android.os.Handler;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import static android.content.ContentValues.TAG;
 
@@ -233,12 +255,175 @@ public class BoxDetectorActivity extends Activity {
 
     private void close() {
         mPreview.stopPreviewAndFreeCamera();
+
+        //Code
+        Bitmap bitmap = BitmapFactory.decodeFile(lastPictureTaken.toString());
+
+        Mat ImageMat = new Mat();
+        Bitmap myBitmap32 = bitmap.copy(Bitmap.Config.ARGB_8888, true);
+        Utils.bitmapToMat(myBitmap32, ImageMat);
+
+        //      Blob Detection
+        Mat mHsv = new Mat();
+        Mat mMaskMat = new Mat();
+        Mat mDilatedMat = new Mat();
+        Imgproc.cvtColor(ImageMat , mHsv, Imgproc.COLOR_BGR2HSV);
+
+        Scalar lowerThreshold = new Scalar (115, 100, 25); // Dull Red color – lower hsv values
+        Scalar upperThreshold = new Scalar (120, 255, 255); // Dull Red color – higher hsv values
+
+        Core.inRange ( mHsv, lowerThreshold , upperThreshold, mMaskMat );
+
+        Imgproc.erode ( mMaskMat, mDilatedMat, new Mat() );
+        Imgproc.erode ( mDilatedMat, mDilatedMat, new Mat() );
+        Imgproc.erode ( mDilatedMat, mDilatedMat, new Mat() );
+        Imgproc.dilate ( mDilatedMat, mDilatedMat, new Mat() );
+        Imgproc.dilate ( mDilatedMat, mDilatedMat, new Mat() );
+        Imgproc.dilate ( mDilatedMat, mDilatedMat, new Mat() );
+        Imgproc.dilate ( mDilatedMat, mDilatedMat, new Mat() );
+
+
+        // contours
+        List<MatOfPoint> contours = new ArrayList<MatOfPoint>();
+        Imgproc.findContours ( mDilatedMat, contours, new Mat(), Imgproc.RETR_EXTERNAL, Imgproc.CHAIN_APPROX_SIMPLE );
+
+        final List<Point> detected = new ArrayList<Point>();
+        for ( int contourIdx=0; contourIdx < contours.size(); contourIdx++ )
+        {
+            if (Imgproc.contourArea(contours.get(contourIdx)) > 50) {
+                Moments moments = Imgproc.moments(contours.get(contourIdx));
+                final Point centroid = new Point();
+                centroid.x = moments.get_m10() / moments.get_m00();
+                centroid.y = moments.get_m01() / moments.get_m00();
+                detected.add(centroid);
+            }
+        }
+
+        Collections.sort(detected, new Comparator<Point>() {
+            public int compare(Point s1, Point s2) {
+                return Double.compare(s1.y, s2.y);
+            }
+        });
+
+        List<Point> temp = new ArrayList<>();
+        final List<List<Point>> grouped = new ArrayList<>();
+
+        for(int i = 0; i < detected.size()-1; i++){
+            double jump = detected.get(i+1).y - detected.get(i).y;
+            if (jump > 100){
+                temp.add(detected.get(i));
+                grouped.add(temp);
+                temp = new ArrayList<Point>();
+            }
+            else if(i == detected.size()-2){
+                temp.add(detected.get(i));
+                temp.add(detected.get(detected.size()-1));
+                grouped.add(temp);
+            }
+            else{
+                temp.add(detected.get(i));
+            }
+        }
+
+        //      Label Detection
+        Mat aaInputFrame1 = new Mat();
+        Mat aaInputFrame2 = new Mat();
+        Mat aaInputFrame5 = new Mat();
+        List<MatOfPoint> coor1 = new ArrayList<MatOfPoint>();
+        Mat result = new Mat();
+        Mat result1 = new Mat();
+        Mat result2 = new Mat();
+        Imgproc.cvtColor(ImageMat, aaInputFrame5, Imgproc.COLOR_BGR2GRAY);
+        Imgproc.Sobel(aaInputFrame5, aaInputFrame1, CvType.CV_32F, 1, 0);
+        Imgproc.Sobel(aaInputFrame5, aaInputFrame2, CvType.CV_32F, 0, 1);
+        Core.subtract(Mat.ones(aaInputFrame2.size(),CvType.CV_32F),aaInputFrame1,result);
+        Core.convertScaleAbs(result, result);
+        Size size = new Size(9,9);
+        Imgproc.blur(result, result, size);
+        Imgproc.threshold(result,result, 30, 255, Imgproc.THRESH_BINARY);
+        Size size1 = new Size(21,7);
+        Mat kernel = Imgproc.getStructuringElement(Imgproc.MORPH_RECT,size1);
+        Imgproc.morphologyEx(result,result1, Imgproc.MORPH_CLOSE, kernel);
+        Imgproc.erode(result1, result1, kernel);
+        Imgproc.dilate(result1,result1,kernel);
+
+        Imgproc.findContours(result1, coor1,new Mat(),Imgproc.RETR_EXTERNAL,Imgproc.CHAIN_APPROX_SIMPLE);
+
+        final List<Point> detectedlabel = new ArrayList<Point>();
+        final List<Float> ratio = new ArrayList<>();
+        for(int i=0; i< coor1.size();i++) {
+            if (Imgproc.contourArea(coor1.get(i)) > 4500) {
+                Rect rect = Imgproc.boundingRect(coor1.get(i));
+                float ratiod = ((float)rect.height/(float)rect.width);
+                if(0<ratiod && ratiod<0.4) {
+                    Imgproc.rectangle(ImageMat, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 20);
+                    Moments moments = Imgproc.moments(coor1.get(i));
+                    final Point centroid = new Point();
+                    centroid.x = moments.get_m10() / moments.get_m00();
+                    centroid.y = moments.get_m01() / moments.get_m00();
+                    detectedlabel.add(centroid);
+                    ratio.add(ratiod);
+                }
+            }
+        }
+
+        Scalar colour;
+        for(int i = 0; i < grouped.size(); i++){
+            for (int contourIdx=0; contourIdx < grouped.get(i).size(); contourIdx++ ){
+                if(i == grouped.size()-1){
+                    colour = new Scalar(0, 0, 255);
+                    Imgproc.line(ImageMat, new Point(grouped.get(i).get(contourIdx).x, grouped.get(i).get(contourIdx).y), new Point(grouped.get(i).get(contourIdx).x, 0), new Scalar(0, 255, 0), 20);
+                }
+                else{
+                    colour = new Scalar(255, 0, 0);
+                }
+                Imgproc.circle (ImageMat, grouped.get(i).get(contourIdx), 2, colour, 150);
+            }
+            if(i == 0){
+                Imgproc.line(ImageMat, new Point(0, grouped.get(0).get(0).y), new Point(5000, grouped.get(0).get(0).y), new Scalar(0, 255, 0), 20);
+            }
+            if(i == 1){
+                Imgproc.line(ImageMat, new Point(0, grouped.get(1).get(0).y), new Point(5000, grouped.get(1).get(0).y), new Scalar(0, 255, 0), 20);
+            }
+        }
+        String coor = "";
+        for(Point i : detected){
+            coor = coor + "x : " + Math.round(i.x) + "|| y : " + Math.round(i.y) +"\n";
+        }
+        coor = coor.trim();
+
+        Log.d("Debug",coor);
+
+        List<Double> x = new ArrayList<>();
+        for (List<Point> j : grouped){
+            x.add(j.get(0).y);
+        }
+        for(Point i : detectedlabel){
+            for(double z : x){
+                if(z - 100 <i.y && i.y < z + 100){
+                    Imgproc.circle (ImageMat,i , 2, new Scalar (0,255,0), 100);
+                }
+            }
+        }
+
+        coor = "";
+        for(Point i : detectedlabel){
+            coor = coor + "x : " + Math.round(i.x) + "|| y : " + Math.round(i.y) +"\n";
+        }
+        coor = coor.trim();
+
+        Log.d("Debug",coor);
+
+        //Convert the processed Mat to Bitmap
+        Imgproc.cvtColor(ImageMat, ImageMat, Imgproc.COLOR_BGR2RGB);
+        Bitmap resultBitmap = Bitmap.createBitmap(ImageMat.cols(),  ImageMat.rows(),Bitmap.Config.ARGB_8888);;
+        Utils.matToBitmap(ImageMat, resultBitmap);
+
         setContentView(R.layout.templatematching);
         ImageView mImageView;
         mImageView = (ImageView) findViewById(R.id.imageView);
-        mImageView.setImageBitmap(BitmapFactory.decodeFile(lastPictureTaken.toString()));
-//        Intent intent = new Intent(this, DemoMain.class);
-//        startActivity(intent);
+        mImageView.setImageBitmap(resultBitmap);
+
     }
 
     public void takePicture(final Camera.PictureCallback callback) throws Exception
@@ -265,4 +450,37 @@ public class BoxDetectorActivity extends Activity {
             Log.d("FOCUS","NOT IN AUTOFOCUS");
             mCamera.takePicture(null, null, callback);
     }
+
+    private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
+        @Override
+        public void onManagerConnected(int status) {
+            switch (status) {
+                case LoaderCallbackInterface.SUCCESS: {
+                    Log.i(TAG, "OpenCV loaded successfully");
+                    try {
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+                break;
+                default: {
+                    super.onManagerConnected(status);
+                }
+                break;
+            }
+        }
+    };
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (!OpenCVLoader.initDebug()) {
+            Log.d(TAG, "Internal OpenCV library not found. Using OpenCV Manager for initialization");
+            OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_3_1_0, this, mLoaderCallback);
+        } else {
+            Log.d(TAG, "OpenCV library found inside package. Using it!");
+            mLoaderCallback.onManagerConnected(LoaderCallbackInterface.SUCCESS);
+        }
+    }
+
 }

@@ -158,8 +158,8 @@ android/support/v4/text/util/LinkifyCompat.class
 com/thoughtworks/xstream/annotations/AnnotationProvider.class
 com/google/android/gms/common/SignInButton.class
 android/support/v4/media/MediaMetadataCompat$TextKey.class
-org/apache/commons/compress/archivers/ArchiveOutputStream.class
 com/google/android/gms/common/api/internal/zzv.class
+org/apache/commons/compress/archivers/ArchiveOutputStream.class
 android/support/v4/media/VolumeProviderCompatApi21$Delegate.class
 android/support/v4/text/util/LinkifyCompat$1.class
 android/support/v4/media/session/PlaybackStateCompat.class

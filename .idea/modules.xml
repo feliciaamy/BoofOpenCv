@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BoofAndroidDemo-master.iml" filepath="$PROJECT_DIR$/BoofAndroidDemo-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BoofOpenCv.iml" filepath="$PROJECT_DIR$/BoofOpenCv.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/commons-io-2.2/commons-io-2.2.iml" filepath="$PROJECT_DIR$/commons-io-2.2/commons-io-2.2.iml" />
       <module fileurl="file://$PROJECT_DIR$/httpmime-4.2.1/httpmime-4.2.1.iml" filepath="$PROJECT_DIR$/httpmime-4.2.1/httpmime-4.2.1.iml" />

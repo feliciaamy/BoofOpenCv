@@ -1,7 +1,7 @@
--injars /Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar
--outjars /Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/multi-dex/debug/componentClasses.jar
+-injars 'C:\Users\Nayr\Documents\BoofOpenCv\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'C:\Users\Nayr\Documents\BoofOpenCv\app\build\intermediates\multi-dex\debug\componentClasses.jar'
 
--libraryjars /Users/Amy/Library/Android/sdk/build-tools/25.0.1/lib/shrinkedAndroid.jar
+-libraryjars 'C:\Users\Nayr\AppData\Local\Android\sdk\build-tools\25.0.1\lib\shrinkedAndroid.jar'
 
 -forceprocessing
 -dontoptimize
@@ -10,7 +10,7 @@
 -dontpreverify
 -dontnote **
 -dontwarn **
--printconfiguration /Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/multi-dex/debug/components.flags
+-printconfiguration 'C:\Users\Nayr\Documents\BoofOpenCv\app\build\intermediates\multi-dex\debug\components.flags'
 
 
 -keep public class * extends android.app.Instrumentation {

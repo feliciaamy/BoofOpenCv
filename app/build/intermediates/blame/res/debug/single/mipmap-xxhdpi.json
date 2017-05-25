@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
-        "source": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\Nayr\\Documents\\BoofOpenCv\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Nayr\\Documents\\BoofOpenCv\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Amy\\Downloads\\BoofAndroidDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Amy\\Downloads\\BoofAndroidDemo-master\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     }
 ]

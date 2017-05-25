@@ -1,14 +1,26 @@
 [
     {
-        "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/layout-land/black_polygon_help.xml",
-        "source": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout-land/black_polygon_help.xml"
+        "merged": "C:\\Users\\Nayr\\Documents\\BoofOpenCv\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\black_polygon_help.xml",
+        "source": "C:\\Users\\Nayr\\Documents\\BoofOpenCv\\app\\src\\main\\res\\layout-land\\black_polygon_help.xml"
     },
     {
-        "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/layout-land/calibration_help.xml",
-        "source": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout-land/calibration_help.xml"
+        "merged": "C:\\Users\\Amy\\Downloads\\BoofAndroidDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\black_polygon_help.xml",
+        "source": "C:\\Users\\Amy\\Downloads\\BoofAndroidDemo-master\\app\\src\\main\\res\\layout-land\\black_polygon_help.xml"
     },
     {
-        "merged": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/build/intermediates/res/merged/debug/layout-land/fiducial_help.xml",
-        "source": "/Users/Amy/Downloads/BoofAndroidDemo-master/app/src/main/res/layout-land/fiducial_help.xml"
+        "merged": "C:\\Users\\Nayr\\Documents\\BoofOpenCv\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\calibration_help.xml",
+        "source": "C:\\Users\\Nayr\\Documents\\BoofOpenCv\\app\\src\\main\\res\\layout-land\\calibration_help.xml"
+    },
+    {
+        "merged": "C:\\Users\\Amy\\Downloads\\BoofAndroidDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\fiducial_help.xml",
+        "source": "C:\\Users\\Amy\\Downloads\\BoofAndroidDemo-master\\app\\src\\main\\res\\layout-land\\fiducial_help.xml"
+    },
+    {
+        "merged": "C:\\Users\\Amy\\Downloads\\BoofAndroidDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\calibration_help.xml",
+        "source": "C:\\Users\\Amy\\Downloads\\BoofAndroidDemo-master\\app\\src\\main\\res\\layout-land\\calibration_help.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nayr\\Documents\\BoofOpenCv\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\fiducial_help.xml",
+        "source": "C:\\Users\\Nayr\\Documents\\BoofOpenCv\\app\\src\\main\\res\\layout-land\\fiducial_help.xml"
     }
 ]

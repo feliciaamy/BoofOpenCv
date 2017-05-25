@@ -1,6 +1,10 @@
 [
     {
-        "outputFile": "/Users/Amy/Downloads/BoofAndroidDemo-master/openCVLibrary310/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "outputFile": "C:\\Users\\Nayr\\Documents\\BoofOpenCv\\openCVLibrary310\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": []
+    },
+    {
+        "outputFile": "C:\\Users\\Amy\\Downloads\\BoofAndroidDemo-master\\openCVLibrary310\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": []
     }
 ]
